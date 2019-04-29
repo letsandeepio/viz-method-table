@@ -1,0 +1,1188 @@
+{
+  "methods": [
+    {
+      "continuum": {
+        "category": "data",
+        "symbol": "C",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://www.enchantedlearning.com/graphicorganizers/timeline/",
+        "description": "Continuum or timeline diagrams are a type of graphic organizer that are used to represent a continuum of data that occur in chronological (time) order or in sequential order."
+      }
+    },
+    {
+      "table": {
+        "category": "data",
+        "symbol": "Tb",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Table_(information)",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "pie chart": {
+        "category": "data",
+        "symbol": "Pi",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Pie_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "bar chart": {
+        "category": "data",
+        "symbol": "B",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Bar_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "histogram": {
+        "category": "data",
+        "symbol": "Hi",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Histogram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "tukey box plot": {
+        "category": "data",
+        "symbol": "Tk",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Box_plot",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "cartesian coordinates": {
+        "category": "data",
+        "symbol": "Ca",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cartesian_coordinate_system",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "line chart": {
+        "category": "data",
+        "symbol": "L",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Line_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "area chart": {
+        "category": "data",
+        "symbol": "Ar",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Area_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "scatterplot": {
+        "category": "data",
+        "symbol": "Sc",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Scatter_plot",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "spectrogram": {
+        "category": "data",
+        "symbol": "Sp",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spectrogram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "radar chart cobweb": {
+        "category": "Information",
+        "symbol": "R",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Radar_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "sankey diagram": {
+        "category": "Information",
+        "symbol": "Sa",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Sankey_diagram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "data map": {
+        "category": "Information",
+        "symbol": "Da",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Thematic_map",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "parallel coordinates": {
+        "category": "Information",
+        "symbol": "Pa",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Parallel_coordinates",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "information lens": {
+        "category": "Information",
+        "symbol": "In",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.ncomva.se/guide/?chapter=Visualizations&section=Table%20Lens#_General",
+        "description": "Table Lens is a common information visualization method to dynamically explore large amounts of tabular data. Borrowing from the spreadsheet model, the Table Lens displays regional data values in columns and rows without scrollbars and without obscuring any data and filling the cells with scaled and coloured horizontal small bars. "
+      }
+    },
+    {
+      "treemap": {
+        "category": "Information",
+        "symbol": "Tr",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Treemapping",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "hyperbolic tree": {
+        "category": "Information",
+        "symbol": "Hy",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Hyperbolic_tree",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "entity relationship diagram": {
+        "category": "Information",
+        "symbol": "E",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "cone tree": {
+        "category": "Information",
+        "symbol": "Cn",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://infovis-wiki.net/wiki/Cone_Trees",
+        "description": "Cone tree is used for visualizing hierarchical information structures. The hierarchy is presented in 3D to maximize effective use of available screen space and enable visualization of the whole structure. Interactive animation is used to shift some of the user's cognitive load to the human perceptual system."
+      }
+    },
+    {
+      "cycle diagram": {
+        "category": "Information",
+        "symbol": "Cy",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Circular-Arrows-Diagram-BPM-Life-Cycle.png",
+        "description": "A cycle diagram is a circular chart that illustrates a series of actions or steps that flow to another. Each of its pieces represents a different phase of a cyclic process"
+      }
+    },
+    {
+      "petri net": {
+        "category": "Information",
+        "symbol": "Pt",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Petri_net",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "system dynamics simulation": {
+        "category": "Information",
+        "symbol": "Sy",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/System_dynamics",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "timeline": {
+        "category": "Information",
+        "symbol": "T",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Timeline",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "flow chart": {
+        "category": "Information",
+        "symbol": "Fl",
+        "basis": "process",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Flowchart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "data flow diagram": {
+        "category": "Information",
+        "symbol": "Df",
+        "basis": "process",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/data-flow_diagram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "Venn Diagram": {
+        "category": "Information",
+        "symbol": "Ve",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venn_diagram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "clustering": {
+        "category": "Information",
+        "symbol": "Cl",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cluster_diagram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "semantic network": {
+        "category": "Information",
+        "symbol": "Se",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Semantic_network",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "mindmap": {
+        "category": "Concept",
+        "symbol": "Mi",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Mind_map",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "layer chart": {
+        "category": "Concept",
+        "symbol": "L",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/geographic-layers.png",
+        "description": "Represent the data in layers."
+      }
+    },
+    {
+      "soft system modeling": {
+        "category": "Concept",
+        "symbol": "So",
+        "basis": "process",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://www.toolshero.com/problem-solving/soft-systems-methodology-ssm/",
+        "description": "“Soft Systems Methodology (SSM) is a cyclic learning system which uses models of human activity to explore with the actors in the real world problem situation, ..."
+      }
+    },
+    {
+      "square of oppositions": {
+        "category": "Concept",
+        "symbol": "Sq",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Square_of_opposition",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "misto pyramid technique": {
+        "category": "Concept",
+        "symbol": "Py",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://www.consultantsmind.com/2016/10/05/minto/",
+        "description": ""
+      }
+    },
+    {
+      "synergy map": {
+        "category": "Concept",
+        "symbol": "Sn",
+        "basis": "structure",
+        "view": "both",
+        "wikipedia": "",
+        "exampleURL": "https://www.reforge.com/blog/disney-growth-map",
+        "description": ""
+      }
+    },
+    {
+      "concentric circles": {
+        "category": "Concept",
+        "symbol": "Cc",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://slidemodel.com/templates/concentric-circles-diagram-template-for-powerpoint/",
+        "description": ""
+      }
+    },
+    {
+      "cause-effect chain": {
+        "category": "Concept",
+        "symbol": "Ce",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://en.wikipedia.org/wiki/Ishikawa_diagram",
+        "description": ""
+      }
+    },
+    {
+      "force field diagram": {
+        "category": "Concept",
+        "symbol": "Fo",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Force-field_analysis",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "argument slide": {
+        "category": "Concept",
+        "symbol": "ar",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/argument-slide.png",
+        "description": ""
+      }
+    },
+    {
+      "toulmin map": {
+        "category": "Concept",
+        "symbol": "Ti",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Toulmin_method",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "ibis augmentation map": {
+        "category": "Concept",
+        "symbol": "Ib",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Wicked_problem",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "meeting trace": {
+        "category": "Concept",
+        "symbol": "Me",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/on-Track.png",
+        "description": ""
+      }
+    },
+    {
+      "communication diagram": {
+        "category": "Concept",
+        "symbol": "Co",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-communication-diagram/",
+        "description": ""
+      }
+    },
+    {
+      "Swim lane diagram": {
+        "category": "Concept",
+        "symbol": "Sw",
+        "basis": "process",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Swim_lane",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "decision tree": {
+        "category": "Concept",
+        "symbol": "Dt",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Decision_tree",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "process event chains": {
+        "category": "Concept",
+        "symbol": "Pr",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Event-driven_process_chain",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "metro map": {
+        "category": "Metaphor",
+        "symbol": "Mm",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Transit_map",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "Flight plan": {
+        "category": "Concept",
+        "symbol": "Fp",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/Flightplan.png",
+        "description": ""
+      }
+    },
+    {
+      "gantt chart": {
+        "category": "Concept",
+        "symbol": "Gc",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Gantt_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "cpm critical path method": {
+        "category": "Concept",
+        "symbol": "Cp",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Critical_path_method",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "pert chart": {
+        "category": "Concept",
+        "symbol": "Pe",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "temple": {
+        "category": "Metaphor",
+        "symbol": "Tm",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "",
+        "exampleURL": "https://blog.infodiagram.com/2018/08/pillar-diagram-ppt-solid-strategy-columns.html",
+        "description": "Using pillar or so-called column visuals helps to express business concepts such as company strategy and values that are based on building something on a solid foundation and principles. Adding a slide with pillars chart rather than using only a text bullet points will help you to present your idea in a clear visual way ."
+      }
+    },
+    {
+      "concept skeleton": {
+        "category": "Concept",
+        "symbol": "Cs",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/concept-skeleton.png",
+        "description": ""
+      }
+    },
+    {
+      "Perspectives Diagram": {
+        "category": "Concept",
+        "symbol": "Pe",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/perspectives-diagram.png",
+        "description": ""
+      }
+    },
+    {
+      "concept fan": {
+        "category": "Concept",
+        "symbol": "Cf",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "https://www.mycoted.com/Concept_Fan",
+        "description": "The Concept Fan is a way of discovering alternative approach's to a problem when you have discarded all obvious solutions. It develops the principle of 'taking a step back' to get a broader viewpoint."
+      }
+    },
+    {
+      "evocative knowledge map": {
+        "category": "Concept",
+        "symbol": "Ev",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/evocative-knowledge-map.png",
+        "description": ""
+      }
+    },
+    {
+      "story template": {
+        "category": "Metaphor",
+        "symbol": "St",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/story-template.png",
+        "description": ""
+      }
+    },
+    {
+      "bridge": {
+        "category": "Metaphor",
+        "symbol": "Br",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/Bridge-of-Negotiation.jpg",
+        "description": ""
+      }
+    },
+    {
+      "dilemma diagram": {
+        "category": "Concept",
+        "symbol": "D",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/dilemma_diagram.png",
+        "description": ""
+      }
+    },
+    {
+      "concept map": {
+        "category": "Concept",
+        "symbol": "Co",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Concept_map",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "vee diagram": {
+        "category": "Concept",
+        "symbol": "V",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/V-Model",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "tree": {
+        "category": "Metaphor",
+        "symbol": "Tr",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/tree_compet_full.png",
+        "description": ""
+      }
+    },
+    {
+      "funnel": {
+        "category": "Metaphor",
+        "symbol": "Fu",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Funnel_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "parameter ruler": {
+        "category": "Metaphor",
+        "symbol": "Pr",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/ruler.png",
+        "description": ""
+      }
+    },
+    {
+      "iceberg": {
+        "category": "Metaphor",
+        "symbol": "Ic",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "",
+        "exampleURL": "https://www.presentationgo.com/presentation/iceberg-diagram-for-powerpoint/",
+        "description": "iceberg principle or the the iceberg theory, is used to illustrate that only a very small amount (the ‘tip’) of information is available or visible, whereas the ‘real’ information is either unavailable or hidden from direct observation"
+      }
+    },
+    {
+      "heaven n hell chart": {
+        "category": "Metaphor",
+        "symbol": "Hh",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/tower-debriefing.jpg",
+        "description": ""
+      }
+    },
+    {
+      "graphic facilitation": {
+        "category": "Compound",
+        "symbol": "G",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "https://en.wikipedia.org/wiki/Graphic_facilitation",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "cartoon": {
+        "category": "Compound",
+        "symbol": "Ct",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "https://en.wikipedia.org/wiki/Cartoon",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "rich picture": {
+        "category": "Compound",
+        "symbol": "Ri",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "https://en.wikipedia.org/wiki/Rich_picture",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/RICH-PICTURE.jpg",
+        "description": ""
+      }
+    },
+    {
+      "knowledge map": {
+        "category": "Compound",
+        "symbol": "Kn",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/elearnland.png",
+        "description": ""
+      }
+    },
+    {
+      "cognitive mapping": {
+        "category": "Compound",
+        "symbol": "Cm",
+        "basis": "structure",
+        "view": "details",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/cognitive-mapping.png",
+        "description": ""
+      }
+    },
+    {
+      "infomural": {
+        "category": "Compound",
+        "symbol": "I",
+        "basis": "structure",
+        "view": "both",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/infomural-GM.png",
+        "description": ""
+      }
+    },
+    {
+      "supply demand curve": {
+        "category": "Strategy",
+        "symbol": "Su",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Supply_and_demand",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "edgeworth box": {
+        "category": "Strategy",
+        "symbol": "ed",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "https://en.wikipedia.org/wiki/Edgeworth_box",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "performance charting": {
+        "category": "Strategy",
+        "symbol": "Pc",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/performance-charting.png",
+        "description": ""
+      }
+    },
+    {
+      "portfolio diagram": {
+        "category": "Strategy",
+        "symbol": "Pf",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/stragroup.png",
+        "description": ""
+      }
+    },
+    {
+      "strategy map": {
+        "category": "Strategy",
+        "symbol": "St",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Strategy_map",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "strategic game board": {
+        "category": "Strategy",
+        "symbol": "Sg",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/strategic-game-board.png",
+        "description": ""
+      }
+    },
+    {
+      "organisation chart": {
+        "category": "Strategy",
+        "symbol": "Oc",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Organizational_chart",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "mintzberg's organigraph": {
+        "category": "Strategy",
+        "symbol": "Mz",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Organigraph",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "house of quality": {
+        "category": "Strategy",
+        "symbol": "Ho",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Quality_function_deployment",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "zwicky's morphological box": {
+        "category": "Strategy",
+        "symbol": "Z",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Morphological_box",
+        "exampleURL": "",
+        "description": "http://www.visual-literacy.org/periodic_table/pix/zwicky.png"
+      }
+    },
+    {
+      "feedback diagram": {
+        "category": "Strategy",
+        "symbol": "Fd",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Feedback",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/feedback-diagram.png",
+        "description": ""
+      }
+    },
+    {
+      "affinity diagram": {
+        "category": "Strategy",
+        "symbol": "Af",
+        "basis": "structure",
+        "view": "both",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Affinity_diagram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "failure tree": {
+        "category": "Strategy",
+        "symbol": "Ft",
+        "basis": "structure",
+        "view": "details",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fault_tree_analysis",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "decision discovery program": {
+        "category": "Strategy",
+        "symbol": "De",
+        "basis": "process",
+        "view": "details",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/decision-discovery.png",
+        "description": ""
+      }
+    },
+    {
+      "magic quadrant": {
+        "category": "Strategy",
+        "symbol": "Mq",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Magic_Quadrant",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/magic-quadrant.png",
+        "description": ""
+      }
+    },
+    {
+      "bcg matrix": {
+        "category": "Strategy",
+        "symbol": "Bm",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Growth%E2%80%93share_matrix",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/bcg-Matrix.png",
+        "description": ""
+      }
+    },
+    {
+      "life-cycle diagram": {
+        "category": "Strategy",
+        "symbol": "Ld",
+        "basis": "process",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/life-cycle.png",
+        "description": ""
+      }
+    },
+    {
+      "strategy canvas": {
+        "category": "Strategy",
+        "symbol": "Stc",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/strategy-canvas.png",
+        "description": ""
+      }
+    },
+    {
+      "porter's five forces": {
+        "category": "Strategy",
+        "symbol": "Po",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "value chain": {
+        "category": "Strategy",
+        "symbol": "Vc",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Value_chain",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "s-cycle": {
+        "category": "Strategy",
+        "symbol": "S",
+        "basis": "process",
+        "view": "details",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/scurve.png",
+        "description": ""
+      }
+    },
+    {
+      "hype-cycle": {
+        "category": "Strategy",
+        "symbol": "Hy",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "divergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Hype_cycle",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "stakeholder map": {
+        "category": "Strategy",
+        "symbol": "Sm",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "https://en.wikipedia.org/wiki/Stakeholder_analysis",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "stakeholder rating map": {
+        "category": "Strategy",
+        "symbol": "Sr",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/stakeholder-rating.png",
+        "description": ""
+      }
+    },
+    {
+      "ishikawa diagram": {
+        "category": "Strategy",
+        "symbol": "Is",
+        "basis": "structure",
+        "view": "both",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ishikawa_diagram",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "taps": {
+        "category": "Strategy",
+        "symbol": "Ta",
+        "basis": "structure",
+        "view": "overview",
+        "thinking": "convergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/TAPS.png",
+        "description": ""
+      }
+    },
+    {
+      "technology map": {
+        "category": "Strategy",
+        "symbol": "Tc",
+        "basis": "structure",
+        "view": "overview",
+        "wikipedia": "https://en.wikipedia.org/wiki/Technology_roadmap",
+        "exampleURL": "",
+        "description": ""
+      }
+    },
+    {
+      "spray diagram": {
+        "category": "Strategy",
+        "symbol": "Sd",
+        "basis": "structure",
+        "view": "details",
+        "thinking": "divergent",
+        "wikipedia": "",
+        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/spray-diagram.gif",
+        "description": "A Spray Diagram is the output from a divergent thinking process that allows a team to: • generate and capture thoughts and associated ideas about a situation or problem. • communicate their ideas in a simple and powerful representation."
+      }
+    }
+  ]
+}

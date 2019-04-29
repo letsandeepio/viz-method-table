@@ -1,0 +1,28 @@
+{
+  "definitions": [
+    {
+      "key": "data",
+      "definition": "Visual representation of data in schematic form (either with or without axis"
+    },
+    {
+      "key": "strategy",
+      "definition": "The systematic use of complementary visual representation in the analysis, development, formulation, communication, and implementation of strategies in organizations "
+    },
+    {
+      "key": "information",
+      "definition": "The use of interactive visual representations of data to amplify cognition. This means that the data is transformed into an image, it is mapped to screenspace. The image can be changed by users as they proceed working with it."
+    },
+    {
+      "key": "metaphor",
+      "definition": "Visual metaphors position information graphically to organize and structure information. They also convery an insight about the represented information through key characterstics of the metaphor that is employed."
+    },
+    {
+      "key": "concept",
+      "definition": "Methods to elaborate (mostly) qualitative concepts, ideas, plans and analyses."
+    },
+    {
+      "key": "compound",
+      "definition": "The complementary use of different graphic representations formats in one single schema or frame. "
+    }
+  ]
+}
