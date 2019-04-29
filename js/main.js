@@ -252,7 +252,9 @@ function hideModal() {
   document.querySelector(".modal").style.visibility = "hidden";
   document.querySelector(".cover").style.display = "none";
   document.querySelector(".is-active").style.transform = "translate(0px, 0px) scale(1)";
-  document.querySelector(".is-active").style.zIndex = '';
-  document.querySelector(".is-active").style.transform = "";
-  document.querySelector(".is-active").classList.remove("is-active");
+  window.setTimeout(function () {
+    document.querySelector(".is-active").style.zIndex = '';
+    document.querySelector(".is-active").style.transform = "";
+    document.querySelector(".is-active").classList.remove("is-active");
+  }, 1000)
 }
