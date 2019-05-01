@@ -1,4 +1,5 @@
 const DELAY = 5;
+let IS_MODEL_OPEN = false;
 
 let getContent = {
   "overview": {
@@ -63,23 +64,32 @@ document.addEventListener("DOMContentLoaded", async function () {
     placement: 'top-start'
   });
 
-  document.querySelector(".cover").addEventListener("click", hideModal);
+  document.querySelector(".modal").centre();
 
 });
 
+
+//document.querySelector(".cover").addEventListener("click", hideModal);
+
+document.onkeydown = function (evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+    hideModal();
+  }
+};
+
 function modalAnimation(self) {
+  IS_MODEL_OPEN = true;
+  document.querySelector(".cover").style.display = "block";
   let selfProperties = self.getBoundingClientRect(),
     translateX,
     translateY,
     scale,
     positionX = window.innerWidth / 2,
-    positionY = window.innerHeight / 2,
-    key = self.getAttribute("data-wikipedia-key");
+    positionY = window.innerHeight / 2;
+
 
   scale = window.innerWidth / 250;
-
-  document.querySelector(".cover").style.display = "block";
-
 
   translateX = Math.round(positionX - selfProperties.left - selfProperties.width / 2);
   translateY = Math.round(positionY - selfProperties.top - selfProperties.height / 2);
@@ -87,16 +97,14 @@ function modalAnimation(self) {
   self.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`
   self.classList.add("is-active");
 
-  setTimeout(function () {
-    document.querySelector(".stage").style.filter = "blur(2px)";
-    document.querySelector(".modal").style.visibility = "visible";
-    populateModal(key);
-    document.querySelector(".modal").centre();
-  }, 210);
-
+  populateModal(self);
+  setTimeout(showModal, 210);
 }
 
-
+function showModal() {
+  document.querySelector(".stage").style.filter = "blur(2px)";
+  document.querySelector(".modal").style.visibility = "visible";
+}
 
 // document.addEventListener("mouseup", async function () {
 //   layOutGrid();
@@ -134,9 +142,9 @@ function processData(data) {
     if (wikipedia) {
       outputHTML += `data-wikipedia-key="${wikipedia}"`
     } else {
-      outputHTML += ` data-example-url="${exampleURL}" data-description="${description}"`
+      outputHTML += ` data-description="${(description) ? description : 'No desciption available'}"`
     }
-    outputHTML += `><div class="element__legend">`
+    outputHTML += ` data-example-url="${exampleURL}"><div class="element__legend">`
     outputHTML += (thinking == "convergent") ? `<i class="fas fa-angle-right"></i>` : `<i class="fas fa-angle-left"></i>`;
     outputHTML += `&nbsp;${getContent[view].html}&nbsp;`
     outputHTML += (thinking == "convergent") ? `<i class="fas fa-angle-left"></i>` : `<i class="fas fa-angle-right"></i>`;
@@ -235,10 +243,19 @@ function removeClass(className, element, index) {
   }, index * DELAY);
 }
 
-async function populateModal(key) {
-  data = await getWikipedia(key);
-  document.querySelector(".modal-description").innerHTML = data.extract_html;
-  document.querySelector(".modal-title").innerHTML = `<h1>${data.displaytitle}</h1>`;
+async function populateModal(element) {
+  let key = element.getAttribute("data-wikipedia-key");
+
+  exampleImage = `<img src="${element.getAttribute("data-example-url")}">`
+
+  if (key) {
+    data = await getWikipedia(key);
+    document.querySelector(".modal-description").innerHTML = exampleImage + data.extract_html;
+    document.querySelector(".modal-title").innerHTML = `<h1>${data.displaytitle}</h1>`;
+  } else {
+    document.querySelector(".modal-description").innerHTML = exampleImage + element.getAttribute("data-description");
+    document.querySelector(".modal-title").innerHTML = `<h1>${element.getAttribute("data-tippy-content")}</h1>`;
+  }
 }
 
 async function getWikipedia(entry) {
@@ -251,10 +268,10 @@ function hideModal() {
   document.querySelector(".stage").removeAttribute("style");
   document.querySelector(".modal").style.visibility = "hidden";
   document.querySelector(".cover").style.display = "none";
-  document.querySelector(".is-active").style.transform = "translate(0px, 0px) scale(1)";
+  document.querySelector(".is-active").style.transform = "";
   window.setTimeout(function () {
     document.querySelector(".is-active").style.zIndex = '';
-    document.querySelector(".is-active").style.transform = "";
     document.querySelector(".is-active").classList.remove("is-active");
-  }, 1000)
+  }, 500)
 }
+

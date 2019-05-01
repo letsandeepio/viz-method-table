@@ -8,7 +8,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/spectrogram.jpg",
+        "exampleURL": "https://www.enchantedlearning.com/graphicorganizers/timeline/",
         "description": "Continuum or timeline diagrams are a type of graphic organizer that are used to represent a continuum of data that occur in chronological (time) order or in sequential order."
       }
     },
@@ -20,7 +20,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Table_(information)",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/table-sbu-vs-cc.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -32,7 +32,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Pie_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/piechart-coca-cola-annual-r.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -44,7 +44,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Bar_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/barchart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -56,7 +56,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Histogram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/area_chart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -68,7 +68,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Box_plot",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/tukey-box-plot.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -80,7 +80,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Cartesian_coordinate_system",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/scenario-matrix.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -92,7 +92,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Line_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/line-chart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -104,7 +104,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Area_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/histogram.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -116,7 +116,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Scatter_plot",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/scatterplot.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -128,7 +128,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Spectrogram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/pwarb.jpg",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -140,7 +140,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Radar_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/50_chart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -152,7 +152,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Sankey_diagram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/sankey-diagram.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -164,7 +164,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Thematic_map",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/data-map.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -176,7 +176,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Parallel_coordinates",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/parallel-coordinates.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -188,7 +188,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/table-lens.png",
+        "exampleURL": "http://www.ncomva.se/guide/?chapter=Visualizations&section=Table%20Lens#_General",
         "description": "Table Lens is a common information visualization method to dynamically explore large amounts of tabular data. Borrowing from the spreadsheet model, the Table Lens displays regional data values in columns and rows without scrollbars and without obscuring any data and filling the cells with scaled and coloured horizontal small bars. "
       }
     },
@@ -200,7 +200,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Treemapping",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/treemaps-news.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -212,7 +212,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Hyperbolic_tree",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/PEOPLEHYPERBOLICTREE.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -224,7 +224,7 @@
         "view": "details",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/entity-relationship.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -236,7 +236,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/parc_cone_tree.png",
+        "exampleURL": "https://infovis-wiki.net/wiki/Cone_Trees",
         "description": "Cone tree is used for visualizing hierarchical information structures. The hierarchy is presented in 3D to maximize effective use of available screen space and enable visualization of the whole structure. Interactive animation is used to shift some of the user's cognitive load to the human perceptual system."
       }
     },
@@ -248,7 +248,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/risk-process.png",
+        "exampleURL": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Circular-Arrows-Diagram-BPM-Life-Cycle.png",
         "description": "A cycle diagram is a circular chart that illustrates a series of actions or steps that flow to another. Each of its pieces represents a different phase of a cyclic process"
       }
     },
@@ -260,7 +260,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Petri_net",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/petri-net.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -272,7 +272,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/System_dynamics",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/SysDyn.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -284,7 +284,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Timeline",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/timeline.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -296,7 +296,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Flowchart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/flowchart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -308,19 +308,19 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/data-flow_diagram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/data-flow.gif",
+        "exampleURL": "",
         "description": ""
       }
     },
     {
-      "venn diagram": {
+      "Venn Diagram": {
         "category": "Information",
         "symbol": "Ve",
         "basis": "structure",
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Venn_diagram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/venn.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -332,7 +332,7 @@
         "view": "overview",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Cluster_diagram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/cluster-chart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -344,7 +344,7 @@
         "view": "overview",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Semantic_network",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/semantic_network.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -356,7 +356,7 @@
         "view": "both",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Mind_map",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/7steps-to-better-notes-mind.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -380,7 +380,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/soft-system.png",
+        "exampleURL": "https://www.toolshero.com/problem-solving/soft-systems-methodology-ssm/",
         "description": "“Soft Systems Methodology (SSM) is a cyclic learning system which uses models of human activity to explore with the actors in the real world problem situation, ..."
       }
     },
@@ -392,20 +392,20 @@
         "view": "overview",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Square_of_opposition",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/squre-of-oppositions.png",
+        "exampleURL": "",
         "description": ""
       }
     },
     {
-      "minto pyramid technique": {
+      "misto pyramid technique": {
         "category": "Concept",
         "symbol": "Py",
         "basis": "structure",
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/minto_pyramid.png",
-        "description": "The Minto Pyramid Principle says that your thinking will be easy for a reader to grasp if you present the ideas organized as a pyramid under a single point."
+        "exampleURL": "https://www.consultantsmind.com/2016/10/05/minto/",
+        "description": ""
       }
     },
     {
@@ -415,8 +415,8 @@
         "basis": "structure",
         "view": "both",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/syn-map.png",
-        "description": "A Synergy Map is useful in providing an overview of all important parameters of your projects and how they relate to one other."
+        "exampleURL": "https://www.reforge.com/blog/disney-growth-map",
+        "description": ""
       }
     },
     {
@@ -427,7 +427,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/concentric-circles-of-marke.png",
+        "exampleURL": "https://slidemodel.com/templates/concentric-circles-diagram-template-for-powerpoint/",
         "description": ""
       }
     },
@@ -439,8 +439,8 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/cause_effect_chain.png",
-        "description": "The cause and effect chain may be used to look at a series of events that are a result of one another or are caused by one another, like a chain reaction."
+        "exampleURL": "https://en.wikipedia.org/wiki/Ishikawa_diagram",
+        "description": ""
       }
     },
     {
@@ -451,7 +451,7 @@
         "view": "overview",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Force-field_analysis",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/force-field.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -475,19 +475,19 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Toulmin_method",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/toulmin-diagram.png",
+        "exampleURL": "",
         "description": ""
       }
     },
     {
-      "ibis argumentation map": {
+      "ibis augmentation map": {
         "category": "Concept",
         "symbol": "Ib",
         "basis": "structure",
         "view": "details",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Wicked_problem",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/argument-IBIS.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -511,19 +511,19 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/communication-diagram.png",
-        "description": "A communication diagram is an extension of object diagram that shows the objects along with the messages that travel from one to another. In addition to the associations among objects, communication diagram shows the messages the objects send each other."
+        "exampleURL": "https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-communication-diagram/",
+        "description": ""
       }
     },
     {
-      "swim lane diagram": {
+      "Swim lane diagram": {
         "category": "Concept",
         "symbol": "Sw",
         "basis": "process",
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Swim_lane",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/swimlane-activity-diagram.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -535,7 +535,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Decision_tree",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/decision-tree.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -547,7 +547,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Event-driven_process_chain",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/process-event-chain.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -559,12 +559,12 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Transit_map",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/metro-map.gif",
+        "exampleURL": "",
         "description": ""
       }
     },
     {
-      "flight plan": {
+      "Flight plan": {
         "category": "Concept",
         "symbol": "Fp",
         "basis": "process",
@@ -583,19 +583,19 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Gantt_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/gantt-chart.png",
+        "exampleURL": "",
         "description": ""
       }
     },
     {
-      "critical path method": {
+      "cpm critical path method": {
         "category": "Concept",
         "symbol": "Cp",
         "basis": "process",
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Critical_path_method",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/cpm2.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -607,7 +607,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/PERT.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -618,7 +618,7 @@
         "basis": "structure",
         "view": "overview",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/temple.png",
+        "exampleURL": "https://blog.infodiagram.com/2018/08/pillar-diagram-ppt-solid-strategy-columns.html",
         "description": "Using pillar or so-called column visuals helps to express business concepts such as company strategy and values that are based on building something on a solid foundation and principles. Adding a slide with pillars chart rather than using only a text bullet points will help you to present your idea in a clear visual way ."
       }
     },
@@ -635,7 +635,7 @@
       }
     },
     {
-      "perspectives diagram": {
+      "Perspectives Diagram": {
         "category": "Concept",
         "symbol": "Pe",
         "basis": "structure",
@@ -654,7 +654,7 @@
         "view": "overview",
         "thinking": "divergent",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/concept-fan.png",
+        "exampleURL": "https://www.mycoted.com/Concept_Fan",
         "description": "The Concept Fan is a way of discovering alternative approach's to a problem when you have discarded all obvious solutions. It develops the principle of 'taking a step back' to get a broader viewpoint."
       }
     },
@@ -713,7 +713,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Concept_map",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/kognitive-mapping-add-innov.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -725,7 +725,7 @@
         "view": "both",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/V-Model",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/vee-software-project.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -749,7 +749,7 @@
         "view": "overview",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Funnel_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/IT-Funnel.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -766,13 +766,13 @@
       }
     },
     {
-      "iceberg diagram": {
+      "iceberg": {
         "category": "Metaphor",
         "symbol": "Ic",
         "basis": "structure",
         "view": "overview",
         "wikipedia": "",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/brand-iceberg.png",
+        "exampleURL": "https://www.presentationgo.com/presentation/iceberg-diagram-for-powerpoint/",
         "description": "iceberg principle or the the iceberg theory, is used to illustrate that only a very small amount (the ‘tip’) of information is available or visible, whereas the ‘real’ information is either unavailable or hidden from direct observation"
       }
     },
@@ -795,7 +795,7 @@
         "basis": "structure",
         "view": "overview",
         "wikipedia": "https://en.wikipedia.org/wiki/Graphic_facilitation",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/graphic-facilitation.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -806,7 +806,7 @@
         "basis": "structure",
         "view": "overview",
         "wikipedia": "https://en.wikipedia.org/wiki/Cartoon",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/cartoon-new.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -862,7 +862,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Supply_and_demand",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/supply-demand-curves.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -873,7 +873,7 @@
         "basis": "structure",
         "view": "overview",
         "wikipedia": "https://en.wikipedia.org/wiki/Edgeworth_box",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/edgeworth-box.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -909,7 +909,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Strategy_map",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/strategy-bsc-map.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -932,7 +932,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Organizational_chart",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/Organigramm-cintec.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -944,7 +944,7 @@
         "view": "details",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Organigraph",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/organigraph.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -956,7 +956,7 @@
         "view": "details",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Quality_function_deployment",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/house-of-quality-hbr.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -968,7 +968,7 @@
         "view": "details",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Morphological_box",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/zwicky.png",
+        "exampleURL": "",
         "description": "http://www.visual-literacy.org/periodic_table/pix/zwicky.png"
       }
     },
@@ -992,7 +992,7 @@
         "view": "both",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Affinity_diagram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/Affinity_Diagram.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -1003,12 +1003,12 @@
         "basis": "structure",
         "view": "details",
         "wikipedia": "https://en.wikipedia.org/wiki/Fault_tree_analysis",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/failure-tree.png",
+        "exampleURL": "",
         "description": ""
       }
     },
     {
-      "decision discovery diagram": {
+      "decision discovery program": {
         "category": "Strategy",
         "symbol": "De",
         "basis": "process",
@@ -1074,7 +1074,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/porter-five-forces.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -1086,7 +1086,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Value_chain",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/porter-value-chain.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -1110,7 +1110,7 @@
         "view": "details",
         "thinking": "divergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Hype_cycle",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/HYPE-CURVE.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -1122,7 +1122,7 @@
         "view": "overview",
         "thinking": "convergent",
         "wikipedia": "https://en.wikipedia.org/wiki/Stakeholder_analysis",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/stakeholder-diagram.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -1145,7 +1145,7 @@
         "basis": "structure",
         "view": "both",
         "wikipedia": "https://en.wikipedia.org/wiki/Ishikawa_diagram",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/fishbone-plan.png",
+        "exampleURL": "",
         "description": ""
       }
     },
@@ -1162,13 +1162,13 @@
       }
     },
     {
-      "technology roadmap": {
+      "technology map": {
         "category": "Strategy",
         "symbol": "Tc",
         "basis": "structure",
         "view": "overview",
         "wikipedia": "https://en.wikipedia.org/wiki/Technology_roadmap",
-        "exampleURL": "http://www.visual-literacy.org/periodic_table/pix/roadmapping-ifm.png",
+        "exampleURL": "",
         "description": ""
       }
     },
