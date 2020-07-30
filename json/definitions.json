@@ -2,7 +2,7 @@
   "definitions": [
     {
       "key": "data",
-      "definition": "Visual representation of data in schematic form (either with or without axis"
+      "definition": "Visual representation of data in schematic form (either with or without axis)"
     },
     {
       "key": "strategy",

@@ -2,20 +2,20 @@ const DELAY = 5;
 let IS_MODEL_OPEN = false;
 
 let getContent = {
-  "overview": {
-    "html": '<i class="far fa-circle"></i>',
+  overview: {
+    html: '<i class="far fa-circle"></i>'
   },
-  "details": {
-    "html": '<i class="fas fa-circle dot"></i>',
+  details: {
+    html: '<i class="fas fa-circle dot"></i>'
   },
-  "both": {
-    "html": '<i class="far fa-dot-circle"></i>',
+  both: {
+    html: '<i class="far fa-dot-circle"></i>'
   }
-}
+};
 
-let getGridLayout = [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 6]
+let getGridLayout = [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 6];
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener('DOMContentLoaded', async function () {
   listOfElements = await loadData();
   processData(listOfElements);
   layOutGrid();
@@ -23,51 +23,51 @@ document.addEventListener("DOMContentLoaded", async function () {
   listOfDefinitions = await loadDefinition();
   processDefintions(listOfDefinitions);
 
-
-  document.querySelectorAll(".element").forEach((item) => {
-    item.addEventListener("mouseup", function () {
+  document.querySelectorAll('.element').forEach((item) => {
+    item.addEventListener('mouseup', function () {
       modalAnimation(this);
-    })
-  })
+    });
+  });
 
-  containerElement = document.querySelector(".container");
-  keyBoxElement = document.querySelector(".key-box");
-  footer = document.querySelector(".footer");
+  containerElement = document.querySelector('.container');
+  keyBoxElement = document.querySelector('.key-box');
+  footer = document.querySelector('.footer');
   containerElement.appendChild(keyBoxElement);
   containerElement.appendChild(footer);
 
+  document.querySelectorAll('.legend-item').forEach((item) => {
+    item.addEventListener('mouseenter', function () {
+      document
+        .querySelectorAll('.element.' + this.getAttribute('data-key'))
+        .forEach((element, index) => {
+          addClass('highlight', element, index);
+        });
+    });
+  });
 
-  document.querySelectorAll(".legend-item").forEach((item) => {
-    item.addEventListener("mouseenter", function () {
-      document.querySelectorAll(".element." + this.getAttribute("data-key")).forEach((element, index) => {
-        addClass("highlight", element, index);
-      })
-    })
-  })
-
-  document.querySelectorAll(".legend-item").forEach((item) => {
-    item.addEventListener("mouseleave", function () {
-      document.querySelectorAll("." + this.getAttribute("data-key")).forEach((element, index) => {
-        removeClass("highlight", element, index);
-      })
-    })
-  })
+  document.querySelectorAll('.legend-item').forEach((item) => {
+    item.addEventListener('mouseleave', function () {
+      document
+        .querySelectorAll('.' + this.getAttribute('data-key'))
+        .forEach((element, index) => {
+          removeClass('highlight', element, index);
+        });
+    });
+  });
 
   tippy.setDefaults({
     animateFill: false,
     animation: 'shift-away',
     inertia: true
-  })
+  });
 
   tippy('.element');
   tippy('.key-item', {
     placement: 'top-start'
   });
 
-  document.querySelector(".modal").centre();
-
+  document.querySelector('.modal').centre();
 });
-
 
 //document.querySelector(".cover").addEventListener("click", hideModal);
 
@@ -80,7 +80,7 @@ document.onkeydown = function (evt) {
 
 function modalAnimation(self) {
   IS_MODEL_OPEN = true;
-  document.querySelector(".cover").style.display = "block";
+  document.querySelector('.cover').style.display = 'block';
   let selfProperties = self.getBoundingClientRect(),
     translateX,
     translateY,
@@ -88,22 +88,25 @@ function modalAnimation(self) {
     positionX = window.innerWidth / 2,
     positionY = window.innerHeight / 2;
 
-
   scale = window.innerWidth / 250;
 
-  translateX = Math.round(positionX - selfProperties.left - selfProperties.width / 2);
-  translateY = Math.round(positionY - selfProperties.top - selfProperties.height / 2);
+  translateX = Math.round(
+    positionX - selfProperties.left - selfProperties.width / 2
+  );
+  translateY = Math.round(
+    positionY - selfProperties.top - selfProperties.height / 2
+  );
   self.style.zIndex = 9998;
-  self.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`
-  self.classList.add("is-active");
+  self.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+  self.classList.add('is-active');
 
   populateModal(self);
   setTimeout(showModal, 210);
 }
 
 function showModal() {
-  document.querySelector(".stage").style.filter = "blur(2px)";
-  document.querySelector(".modal").style.visibility = "visible";
+  document.querySelector('.stage').style.filter = 'blur(2px)';
+  document.querySelector('.modal').style.visibility = 'visible';
 }
 
 // document.addEventListener("mouseup", async function () {
@@ -111,63 +114,80 @@ function showModal() {
 // });
 
 async function loadData() {
-  response = await fetch("json/db.json")
+  response = await fetch('json/db.json');
   data = await response.json();
 
   return data;
 }
 
 async function loadDefinition() {
-  response = await fetch("json/definitions.json")
+  response = await fetch('json/definitions.json');
   data = await response.json();
 
   return data;
 }
 
 function processData(data) {
-  let outputHTML = "";
-  for (let i = 0; i < (data.methods.length); i++) {
-
+  let outputHTML = '';
+  for (let i = 0; i < data.methods.length; i++) {
     let method = data.methods[i];
     let name = Object.keys(method);
 
-    let { category, symbol, basis, thinking, view, wikipedia, exampleURL, description } = method[name];
+    let {
+      category,
+      symbol,
+      basis,
+      thinking,
+      view,
+      wikipedia,
+      exampleURL,
+      description
+    } = method[name];
     let shortName = JSON.stringify(name).slice(2, name.length - 3);
-    wikipedia = wikipedia.substr(wikipedia.lastIndexOf("/") + 1, wikipedia.length)
+    wikipedia = wikipedia.substr(
+      wikipedia.lastIndexOf('/') + 1,
+      wikipedia.length
+    );
 
     //let shortName = truncate(JSON.stringify(name));
 
-    outputHTML += `<div class="element ${category.toLowerCase()} " data-tippy-content="${name}" `
+    outputHTML += `<div class="element ${category.toLowerCase()} " data-tippy-content="${name}" `;
 
     if (wikipedia) {
-      outputHTML += `data-wikipedia-key="${wikipedia}"`
+      outputHTML += `data-wikipedia-key="${wikipedia}"`;
     } else {
-      outputHTML += ` data-description="${(description) ? description : 'No desciption available'}"`
+      outputHTML += ` data-description="${
+        description ? description : 'No desciption available'
+      }"`;
     }
-    outputHTML += ` data-example-url="${exampleURL}"><div class="element__legend">`
-    outputHTML += (thinking == "convergent") ? `<i class="fas fa-angle-right"></i>` : `<i class="fas fa-angle-left"></i>`;
-    outputHTML += `&nbsp;${getContent[view].html}&nbsp;`
-    outputHTML += (thinking == "convergent") ? `<i class="fas fa-angle-left"></i>` : `<i class="fas fa-angle-right"></i>`;
+    outputHTML += ` data-example-url="${exampleURL}"><div class="element__legend">`;
+    outputHTML +=
+      thinking == 'convergent'
+        ? `<i class="fas fa-angle-right"></i>`
+        : `<i class="fas fa-angle-left"></i>`;
+    outputHTML += `&nbsp;${getContent[view].html}&nbsp;`;
+    outputHTML +=
+      thinking == 'convergent'
+        ? `<i class="fas fa-angle-left"></i>`
+        : `<i class="fas fa-angle-right"></i>`;
     outputHTML += `
       </div><div class="element__symbol ${basis}">${symbol}</div>
       <div class="element__name hyphenate">${truncate(shortName)}</div>
       <div class="element__position">${i + 1}</div>
-    </div>`
+    </div>`;
   }
 
-  document.querySelector(".container").innerHTML += outputHTML;
+  document.querySelector('.container').innerHTML += outputHTML;
 }
 
 function layOutGrid() {
-
-  layoutData = []
+  layoutData = [];
 
   for (i = 0; i < getGridLayout.length; i++) {
     for (j = 0; j < getGridLayout[i]; j++) {
       intial = 6 - getGridLayout[i]; //required for grid space loayout from top to down
 
-
-      layoutData.push("grid-area: " + (intial + j + 1) + " / " + (i + 1));
+      layoutData.push('grid-area: ' + (intial + j + 1) + ' / ' + (i + 1));
     }
   }
 
@@ -175,15 +195,13 @@ function layOutGrid() {
 
   for (i = 5; i < 19; i++) {
     for (j = 8; j < 10; j++) {
-      layoutData.push("grid-area: " + (j) + "/" + (i));
+      layoutData.push('grid-area: ' + j + '/' + i);
     }
   }
 
-  document.querySelector(".container").childNodes.forEach((item, index) => {
+  document.querySelector('.container').childNodes.forEach((item, index) => {
     item.style = layoutData[index];
-  })
-
-
+  });
 }
 
 //https://hibbard.eu/how-to-center-an-html-element-using-javascript/
@@ -194,18 +212,16 @@ HTMLElement.prototype.centre = function () {
   this.style.position = 'absolute';
   this.style.left = (w - this.offsetWidth) / 2 + 'px';
   this.style.top = (h - this.offsetHeight) / 2 + window.pageYOffset + 'px';
-}
+};
 
 //https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
 
 String.prototype.capitalize = function () {
-  return this.charAt(0).toUpperCase() + this.slice(1)
-}
-
-
+  return this.charAt(0).toUpperCase() + this.slice(1);
+};
 
 function truncate(words) {
-  return (words.length > 20) ? words.substr(0, words.lastIndexOf(" ")) : words;
+  return words.length > 20 ? words.substr(0, words.lastIndexOf(' ')) : words;
 }
 
 function processDefintions(data) {
@@ -213,7 +229,9 @@ function processDefintions(data) {
 
   data.definitions.forEach((item) => {
     outputHTML += `<div class="legend-item" data-key="${item.key}">
-      <div class="legend-preview"><div class="${item.key} legend-key"></div></div>
+      <div class="legend-preview"><div class="${
+        item.key
+      } legend-key"></div></div>
       <div class="legend-text">
         <div class="legend-title"> ${item.key.capitalize()} Visualizations</div>
         <div class="legend-description">
@@ -221,12 +239,12 @@ function processDefintions(data) {
           </div>
       </div>
     </div>`;
-  })
+  });
 
-  outputHTML += "</div>";
+  outputHTML += '</div>';
 
-  document.querySelector(".container").innerHTML += outputHTML;
-  document.querySelector(".legend-box").style = "grid-area: 2 /3;"
+  document.querySelector('.container').innerHTML += outputHTML;
+  document.querySelector('.legend-box').style = 'grid-area: 2 /3;';
 }
 
 //utility functions
@@ -244,34 +262,44 @@ function removeClass(className, element, index) {
 }
 
 async function populateModal(element) {
-  let key = element.getAttribute("data-wikipedia-key");
+  let key = element.getAttribute('data-wikipedia-key');
 
-  exampleImage = `<img src="${element.getAttribute("data-example-url")}">`
+  exampleImage = `<img src="${element.getAttribute('data-example-url')}">`;
 
   if (key) {
     data = await getWikipedia(key);
-    document.querySelector(".modal-description").innerHTML = exampleImage + data.extract_html;
-    document.querySelector(".modal-title").innerHTML = `<h1>${data.displaytitle}</h1>`;
+    document.querySelector('.modal-description').innerHTML =
+      exampleImage + data.extract_html;
+    document.querySelector(
+      '.modal-title'
+    ).innerHTML = `<h1>${data.displaytitle}</h1>`;
+    document.querySelector(
+      '.wikipedia-url'
+    ).innerHTML = `<a href='https://en.wikipedia.org/wiki/${key}' target='_blank'>View on wikipedia</a>`;
   } else {
-    document.querySelector(".modal-description").innerHTML = exampleImage + element.getAttribute("data-description");
-    document.querySelector(".modal-title").innerHTML = `<h1>${element.getAttribute("data-tippy-content")}</h1>`;
+    document.querySelector('.modal-description').innerHTML =
+      exampleImage + element.getAttribute('data-description');
+    document.querySelector(
+      '.modal-title'
+    ).innerHTML = `<h1>${element.getAttribute('data-tippy-content')}</h1>`;
   }
 }
 
 async function getWikipedia(entry) {
-  xhr = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${entry}`);
-  res = await xhr.json()
+  xhr = await fetch(
+    `https://en.wikipedia.org/api/rest_v1/page/summary/${entry}`
+  );
+  res = await xhr.json();
   return res;
 }
 
 function hideModal() {
-  document.querySelector(".stage").removeAttribute("style");
-  document.querySelector(".modal").style.visibility = "hidden";
-  document.querySelector(".cover").style.display = "none";
-  document.querySelector(".is-active").style.transform = "";
+  document.querySelector('.stage').removeAttribute('style');
+  document.querySelector('.modal').style.visibility = 'hidden';
+  document.querySelector('.cover').style.display = 'none';
+  document.querySelector('.is-active').style.transform = '';
   window.setTimeout(function () {
-    document.querySelector(".is-active").style.zIndex = '';
-    document.querySelector(".is-active").classList.remove("is-active");
-  }, 500)
+    document.querySelector('.is-active').style.zIndex = '';
+    document.querySelector('.is-active').classList.remove('is-active');
+  }, 500);
 }
-

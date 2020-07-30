@@ -1,0 +1,19 @@
+{
+  "name": "viz-method-table",
+  "version": "1.0.0",
+  "description": "A periodic table of Visualization Methods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letsandeepio/viz-method-table.git"
+  },
+  "author": "Sandeep Kumar Chopra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/letsandeepio/viz-method-table/issues"
+  },
+  "homepage": "https://github.com/letsandeepio/viz-method-table#readme"
+}
