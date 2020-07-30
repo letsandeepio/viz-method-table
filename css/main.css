@@ -1,306 +1,321 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 :root {
-    --data: #FFD98E;
-    --strategy: #5CA0D3;
-    --information: #A7D6C5;
-    --metaphor: #F59AA3;
-    --concept: #74B49B;
-    --compound: #8293FF;
+  --data: #ffd98e;
+  --strategy: #5ca0d3;
+  --information: #a7d6c5;
+  --metaphor: #f59aa3;
+  --concept: #74b49b;
+  --compound: #8293ff;
 }
 
 body {
-    font-family: 'Comfortaa', cursive;
-    font-weight: 300;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(18, 70px);
-    grid-template-rows: repeat(9, 70px);
-    grid-auto-flow: column;
-    grid-gap: 6px;
+  display: grid;
+  grid-template-columns: repeat(18, 70px);
+  grid-template-rows: repeat(9, 70px);
+  grid-auto-flow: column;
+  grid-gap: 6px;
 }
 
 .element {
-    position: relative;
-    width: 70px;
-    height: 70px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: .75rem;
-    transition: all .2s ease;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .element:focus {
-    outline: none;
+  outline: none;
 }
 
 .element__legend {
-    text-align: center;
+  text-align: center;
 }
 
 .element__symbol {
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 .element__name {
-    font-size: .6rem;
-    text-align: center;
+  font-size: 0.6rem;
+  text-align: center;
 }
 
 .element__position {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    font-size: .5rem;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.5rem;
 }
 
 .process {
-    color: blue;
+  color: blue;
 }
 
 .data {
-    background-color: var(--data);
+  background-color: var(--data);
 }
 
 .strategy {
-    background-color: var(--strategy);
+  background-color: var(--strategy);
 }
 
 .information {
-    background-color: var(--information);
+  background-color: var(--information);
 }
 
 .metaphor {
-    background-color: var(--metaphor);
+  background-color: var(--metaphor);
 }
 
 .compound {
-    background-color: var(--compound);
+  background-color: var(--compound);
 }
 
 .concept {
-    background-color: var(--concept);
+  background-color: var(--concept);
 }
 
 .dot {
-    font-size: .3rem;
+  font-size: 0.3rem;
 }
 
 .cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: transparent;
-    height: 100vh;
-    width: 100vw;
-    display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  height: 100vh;
+  width: 100vw;
+  display: none;
 }
 
 .modal {
-    width: 550px;
-    height: 550px;
-    background-color: #EDD9C7;
-    opacity: 0.9;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 550px;
+  height: 550px;
+  background-color: #edd9c7;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .modal-container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .modal-content {
-    overflow: scroll;
-    height: 480px
+  overflow: scroll;
+  height: 480px;
 }
 
 .modal-header {
-    text-align: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.modal-header svg {
+  width: 24px;
+  vertical-align: top;
+}
+
+.modal-header:hover {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .element .tooltip {
-    font-size: .7rem;
-    position: absolute;
-    padding: .25rem;
-    text-align: center;
-    background-color: #efefef;
-    color: black;
-    border-radius: 1px;
-    visibility: hidden;
-    transition: visibility 0.15s cubic-bezier(0.23, 1, 0.32, 1);
-    z-index: 100;
+  font-size: 0.7rem;
+  position: absolute;
+  padding: 0.25rem;
+  text-align: center;
+  background-color: #efefef;
+  color: black;
+  border-radius: 1px;
+  visibility: hidden;
+  transition: visibility 0.15s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 100;
 }
 
 .element:hover .tooltip {
-    visibility: visible;
+  visibility: visible;
 }
 
 .element .tooltip.top-tooltip {
-    top: -.75rem;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
+  top: -0.75rem;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .element .tooltip.top-tooltip::after {
-    content: '';
-    position: absolute;
-    bottom: -.9rem;
-    left: 50%;
-    border-top: 7.5px solid #efefef;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    -webkit-transform: translate(-50%, -100%);
-    transform: translate(-50%, -100%);
+  content: '';
+  position: absolute;
+  bottom: -0.9rem;
+  left: 50%;
+  border-top: 7.5px solid #efefef;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  -webkit-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
 }
 
 .element:hover {
-    box-shadow: 0 0 1rem #84F9DA;
-    -webkit-transform: scale(1.075);
-    transform: scale(1.075);
+  box-shadow: 0 0 1rem #84f9da;
+  -webkit-transform: scale(1.075);
+  transform: scale(1.075);
 }
 
 .highlight {
-    box-shadow: 0 0 1rem black;
-    -webkit-transform: scale(1.050);
-    transform: scale(1.050);
+  box-shadow: 0 0 1rem black;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .hyphenate {
-    /* Careful, this breaks the word wherever it is without a hyphen */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    /* Adds a hyphen where the word breaks */
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
+  /* Careful, this breaks the word wherever it is without a hyphen */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  /* Adds a hyphen where the word breaks */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
 h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
 }
 
 .legend-box {
-    width: 750px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-around;
+  width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .legend-item {
-    display: flex;
-    width: 340px;
-    margin: 2px;
-    cursor: default;
+  display: flex;
+  width: 340px;
+  margin: 2px;
+  cursor: default;
 }
 
 .legend-preview {
-    margin: 2px;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  margin: 2px;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .legend-key {
-    height: 35px;
-    width: 45px;
+  height: 35px;
+  width: 45px;
 }
 
 .legend-text {
-    margin-left: 5px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .legend-title {
-    font-weight: 700;
-    margin: 2px;
-    font-size: .9rem;
+  font-weight: 700;
+  margin: 2px;
+  font-size: 0.9rem;
 }
 
 .legend-description {
-    margin: 2px;
-    font-size: .65rem;
-    text-align: justify;
+  margin: 2px;
+  font-size: 0.65rem;
+  text-align: justify;
 }
 
 .key-box {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    margin-top: 20px;
-    align-self: start;
-    grid-area: 7/1;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-top: 20px;
+  align-self: start;
+  grid-area: 7/1;
 }
 
 .key-item {
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    cursor: default;
-    transition: all 0.2s;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  cursor: default;
+  transition: all 0.2s;
 }
 
 .key-item:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .no-margin {
-    margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .key-data {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .footer {
-    align-self: center;
-    font-size: .8rem;
-    grid-area: 7 / 5 / auto / span 14;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between
+  align-self: center;
+  font-size: 0.8rem;
+  grid-area: 7 / 5 / auto / span 14;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    font-size: 1.5rem;
-    margin-left: 10px;
-    opacity: .7;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  opacity: 0.7;
 }
 
 .footer a {
-    color: #3273dc;
-    cursor: pointer;
-    text-decoration: none;
-    border-bottom: 2px solid rgba(50, 115, 220, .1);
-    padding-bottom: 2px;
+  color: #3273dc;
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(50, 115, 220, 0.1);
+  padding-bottom: 2px;
 }
 
 .footer a:hover {
-    color: #1e57b4;
-    border-bottom-color: #1e57b4;
+  color: #1e57b4;
+  border-bottom-color: #1e57b4;
 }

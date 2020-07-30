@@ -1,7 +1,9 @@
+/* eslint-disable func-names */
+/* eslint-disable comma-dangle */
 const DELAY = 5;
 let IS_MODEL_OPEN = false;
 
-let getContent = {
+const getContent = {
   overview: {
     html: '<i class="far fa-circle"></i>'
   },
@@ -13,14 +15,20 @@ let getContent = {
   }
 };
 
-let getGridLayout = [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 6];
+const getGridLayout = [6, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 5, 5, 5, 5, 6];
 
-document.addEventListener('DOMContentLoaded', async function () {
-  listOfElements = await loadData();
+async function loadData() {
+  const response = await fetch('json/db.json');
+  const data = await response.json();
+  return data;
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+  const listOfElements = await loadData();
   processData(listOfElements);
   layOutGrid();
 
-  listOfDefinitions = await loadDefinition();
+  const listOfDefinitions = await loadDefinition();
   processDefintions(listOfDefinitions);
 
   document.querySelectorAll('.element').forEach((item) => {
@@ -29,16 +37,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     });
   });
 
-  containerElement = document.querySelector('.container');
-  keyBoxElement = document.querySelector('.key-box');
-  footer = document.querySelector('.footer');
+  const containerElement = document.querySelector('.container');
+  const keyBoxElement = document.querySelector('.key-box');
+  const footer = document.querySelector('.footer');
   containerElement.appendChild(keyBoxElement);
   containerElement.appendChild(footer);
 
   document.querySelectorAll('.legend-item').forEach((item) => {
     item.addEventListener('mouseenter', function () {
       document
-        .querySelectorAll('.element.' + this.getAttribute('data-key'))
+        .querySelectorAll(`.element.${this.getAttribute('data-key')}`)
         .forEach((element, index) => {
           addClass('highlight', element, index);
         });
@@ -48,7 +56,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   document.querySelectorAll('.legend-item').forEach((item) => {
     item.addEventListener('mouseleave', function () {
       document
-        .querySelectorAll('.' + this.getAttribute('data-key'))
+        .querySelectorAll(`.${this.getAttribute('data-key')}`)
         .forEach((element, index) => {
           removeClass('highlight', element, index);
         });
@@ -69,11 +77,10 @@ document.addEventListener('DOMContentLoaded', async function () {
   document.querySelector('.modal').centre();
 });
 
-//document.querySelector(".cover").addEventListener("click", hideModal);
+// document.querySelector(".cover").addEventListener("click", hideModal);
 
 document.onkeydown = function (evt) {
-  evt = evt || window.event;
-  if (evt.keyCode == 27) {
+  if (evt.keyCode === 27) {
     hideModal();
   }
 };
@@ -81,19 +88,16 @@ document.onkeydown = function (evt) {
 function modalAnimation(self) {
   IS_MODEL_OPEN = true;
   document.querySelector('.cover').style.display = 'block';
-  let selfProperties = self.getBoundingClientRect(),
-    translateX,
-    translateY,
-    scale,
-    positionX = window.innerWidth / 2,
-    positionY = window.innerHeight / 2;
+  const selfProperties = self.getBoundingClientRect();
+  const positionX = window.innerWidth / 2;
+  const positionY = window.innerHeight / 2;
 
-  scale = window.innerWidth / 250;
+  const scale = window.innerWidth / 250;
 
-  translateX = Math.round(
+  const translateX = Math.round(
     positionX - selfProperties.left - selfProperties.width / 2
   );
-  translateY = Math.round(
+  const translateY = Math.round(
     positionY - selfProperties.top - selfProperties.height / 2
   );
   self.style.zIndex = 9998;
@@ -109,31 +113,20 @@ function showModal() {
   document.querySelector('.modal').style.visibility = 'visible';
 }
 
-// document.addEventListener("mouseup", async function () {
-//   layOutGrid();
-// });
-
-async function loadData() {
-  response = await fetch('json/db.json');
-  data = await response.json();
-
-  return data;
-}
-
 async function loadDefinition() {
-  response = await fetch('json/definitions.json');
-  data = await response.json();
+  const response = await fetch('json/definitions.json');
+  const data = await response.json();
 
   return data;
 }
 
 function processData(data) {
   let outputHTML = '';
-  for (let i = 0; i < data.methods.length; i++) {
-    let method = data.methods[i];
-    let name = Object.keys(method);
+  for (let i = 0; i < data.methods.length; i += 1) {
+    const method = data.methods[i];
+    const name = Object.keys(method);
 
-    let {
+    const {
       category,
       symbol,
       basis,
@@ -143,33 +136,31 @@ function processData(data) {
       exampleURL,
       description
     } = method[name];
-    let shortName = JSON.stringify(name).slice(2, name.length - 3);
-    wikipedia = wikipedia.substr(
+    const shortName = JSON.stringify(name).slice(2, name.length - 3);
+    const wikipediaKey = wikipedia.substr(
       wikipedia.lastIndexOf('/') + 1,
       wikipedia.length
     );
 
-    //let shortName = truncate(JSON.stringify(name));
-
     outputHTML += `<div class="element ${category.toLowerCase()} " data-tippy-content="${name}" `;
 
-    if (wikipedia) {
-      outputHTML += `data-wikipedia-key="${wikipedia}"`;
+    if (wikipediaKey) {
+      outputHTML += `data-wikipedia-key="${wikipediaKey}"`;
     } else {
       outputHTML += ` data-description="${
-        description ? description : 'No desciption available'
+        description || 'No desciption available'
       }"`;
     }
     outputHTML += ` data-example-url="${exampleURL}"><div class="element__legend">`;
     outputHTML +=
-      thinking == 'convergent'
-        ? `<i class="fas fa-angle-right"></i>`
-        : `<i class="fas fa-angle-left"></i>`;
+      thinking === 'convergent'
+        ? '<i class="fas fa-angle-right"></i>'
+        : '<i class="fas fa-angle-left"></i>';
     outputHTML += `&nbsp;${getContent[view].html}&nbsp;`;
     outputHTML +=
-      thinking == 'convergent'
-        ? `<i class="fas fa-angle-left"></i>`
-        : `<i class="fas fa-angle-right"></i>`;
+      thinking === 'convergent'
+        ? '<i class="fas fa-angle-left"></i>'
+        : '<i class="fas fa-angle-right"></i>';
     outputHTML += `
       </div><div class="element__symbol ${basis}">${symbol}</div>
       <div class="element__name hyphenate">${truncate(shortName)}</div>
@@ -181,21 +172,21 @@ function processData(data) {
 }
 
 function layOutGrid() {
-  layoutData = [];
+  const layoutData = [];
 
-  for (i = 0; i < getGridLayout.length; i++) {
-    for (j = 0; j < getGridLayout[i]; j++) {
-      intial = 6 - getGridLayout[i]; //required for grid space loayout from top to down
+  for (let i = 0; i < getGridLayout.length; i += 1) {
+    for (let j = 0; j < getGridLayout[i]; j += 1) {
+      const intial = 6 - getGridLayout[i]; // required for grid space loayout from top to down
 
-      layoutData.push('grid-area: ' + (intial + j + 1) + ' / ' + (i + 1));
+      layoutData.push(`grid-area: ${intial + j + 1} / ${i + 1}`);
     }
   }
 
-  //for laying out the grid items on row 8 to 9 and column 5 to 18 the strategy items
+  // for laying out the grid items on row 8 to 9 and column 5 to 18 the strategy items
 
-  for (i = 5; i < 19; i++) {
-    for (j = 8; j < 10; j++) {
-      layoutData.push('grid-area: ' + j + '/' + i);
+  for (let i = 5; i < 19; i += 1) {
+    for (let j = 8; j < 10; j += 1) {
+      layoutData.push(`grid-area: ${j}/${i}`);
     }
   }
 
@@ -204,20 +195,18 @@ function layOutGrid() {
   });
 }
 
-//https://hibbard.eu/how-to-center-an-html-element-using-javascript/
+// https://hibbard.eu/how-to-center-an-html-element-using-javascript/
 
 HTMLElement.prototype.centre = function () {
-  let w = window.innerWidth,
-    h = window.innerHeight;
+  const w = window.innerWidth;
+  const h = window.innerHeight;
   this.style.position = 'absolute';
-  this.style.left = (w - this.offsetWidth) / 2 + 'px';
-  this.style.top = (h - this.offsetHeight) / 2 + window.pageYOffset + 'px';
+  this.style.left = `${(w - this.offsetWidth) / 2}px`;
+  this.style.top = `${(h - this.offsetHeight) / 2 + window.pageYOffset}px`;
 };
 
-//https://flaviocopes.com/how-to-uppercase-first-letter-javascript/
-
-String.prototype.capitalize = function () {
-  return this.charAt(0).toUpperCase() + this.slice(1);
+const capitalize = function (text) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
 };
 
 function truncate(words) {
@@ -225,7 +214,7 @@ function truncate(words) {
 }
 
 function processDefintions(data) {
-  let outputHTML = `<div class="legend-box">`;
+  let outputHTML = '<div class="legend-box">';
 
   data.definitions.forEach((item) => {
     outputHTML += `<div class="legend-item" data-key="${item.key}">
@@ -233,7 +222,7 @@ function processDefintions(data) {
         item.key
       } legend-key"></div></div>
       <div class="legend-text">
-        <div class="legend-title"> ${item.key.capitalize()} Visualizations</div>
+        <div class="legend-title"> ${capitalize(item.key)} Visualizations</div>
         <div class="legend-description">
           ${item.definition}
           </div>
@@ -247,7 +236,7 @@ function processDefintions(data) {
   document.querySelector('.legend-box').style = 'grid-area: 2 /3;';
 }
 
-//utility functions
+// utility functions
 
 function addClass(className, element, index) {
   setTimeout(() => {
@@ -262,14 +251,17 @@ function removeClass(className, element, index) {
 }
 
 async function populateModal(element) {
-  let key = element.getAttribute('data-wikipedia-key');
+  const key = element.getAttribute('data-wikipedia-key');
 
-  exampleImage = `<img src="${element.getAttribute('data-example-url')}">`;
+  const exampleImage = `<img src="${element.getAttribute(
+    'data-example-url'
+  )}"><br>`;
 
   if (key) {
-    data = await getWikipedia(key);
-    document.querySelector('.modal-description').innerHTML =
-      exampleImage + data.extract_html;
+    const data = await getWikipedia(key);
+    document.querySelector('.modal-description').innerHTML = `${
+      exampleImage + data.extract_html
+    }<br>`;
     document.querySelector(
       '.modal-title'
     ).innerHTML = `<h1>${data.displaytitle}</h1>`;
@@ -277,8 +269,9 @@ async function populateModal(element) {
       '.wikipedia-url'
     ).innerHTML = `<a href='https://en.wikipedia.org/wiki/${key}' target='_blank'>View on wikipedia</a>`;
   } else {
-    document.querySelector('.modal-description').innerHTML =
-      exampleImage + element.getAttribute('data-description');
+    document.querySelector('.modal-description').innerHTML = `${
+      exampleImage + element.getAttribute('data-description')
+    }<br>`;
     document.querySelector(
       '.modal-title'
     ).innerHTML = `<h1>${element.getAttribute('data-tippy-content')}</h1>`;
@@ -286,10 +279,10 @@ async function populateModal(element) {
 }
 
 async function getWikipedia(entry) {
-  xhr = await fetch(
+  const xhr = await fetch(
     `https://en.wikipedia.org/api/rest_v1/page/summary/${entry}`
   );
-  res = await xhr.json();
+  const res = await xhr.json();
   return res;
 }
 
@@ -298,7 +291,7 @@ function hideModal() {
   document.querySelector('.modal').style.visibility = 'hidden';
   document.querySelector('.cover').style.display = 'none';
   document.querySelector('.is-active').style.transform = '';
-  window.setTimeout(function () {
+  window.setTimeout(() => {
     document.querySelector('.is-active').style.zIndex = '';
     document.querySelector('.is-active').classList.remove('is-active');
   }, 500);
